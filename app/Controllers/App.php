@@ -6,6 +6,15 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
+    // protected $acf = false;
+
+    // public function __construct()
+    // {
+    //     if( acf_get_valid_post_id( get_queried_object() )) {
+    //         $this->acf = true;
+    //     }
+    // }
+
     public function siteName()
     {
         return get_bloginfo('name');

@@ -8,3 +8,16 @@ $theme-colors: (
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+// BREAKPOINTS & MEDIA QUERIES
+$mobile-bp:   700px;
+$tight-bp:    1000px;
+$standard-bp: 1920px;
+$large-bp:    2048px;
+$xxl-bp:      3840px;
+
+$mobile: "only screen and (max-width : #{$mobile-bp})";
+$tight: "only screen and (max-width : #{$tight-bp})";
+$standard: "only screen and (min-width : #{$mobile-bp}) and (max-width : #{$standard-bp})";
+$large: "only screen and (min-width : #{$standard-bp}) and (max-width : #{$large-bp})";
+$xxl: "only screen and (min-width : #{$large-bp})";
