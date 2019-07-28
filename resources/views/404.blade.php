@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
 
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+<section class="four-zero-four">
+  <h1 class="four-zero-four__title">{{ __('Nothing to see here!') }}</h1>
+  <a href="{{ home_url('/') }}" class="button">Go back home</a>
+</section>
+
 @endsection
